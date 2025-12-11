@@ -14,7 +14,7 @@ function dm_enqueue_assets() { //dm is Dark Mode
         return;
     }
 
-    $plugin_url = plugin_dir_url ( __FILE__);
+    $plugin_url = plugin_dir_url ( __FILE__ );
 
     wp_enqueue_style(
         'dm-styles',
