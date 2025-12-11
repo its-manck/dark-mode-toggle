@@ -27,7 +27,7 @@ function dm_enqueue_assets() { //dm is Dark Mode
         'dm-script',
         $plugin_url . 'assets/js/dark-mode-toggle.js'
         array(),
-        '1.0.0.'
+        '1.0.0.',
         true 
     );
 }
@@ -38,7 +38,7 @@ function dm_render_toggle_button() {
     if ( is_admin() ) {
         return;
     }
-    echo '<button id="dm-toggle" class=dm-toggle type="button" aria-label="toggle dark mode">
+    echo '<button id="dm-toggle" class="dm-toggle" type="button" aria-label="Toggle dark mode">
         <span class="dm-icon dm-icon-moon">🌙< </span>
         <span class="dm-icon dm-icon-sun">☀️< </span>
         </button>';
