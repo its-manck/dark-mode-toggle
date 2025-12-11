@@ -24,7 +24,7 @@ function dm_enqueue_assets() { //dm is Dark Mode
     );
 
     wp_enqueue_script(
-        'dm-script'
+        'dm-script',
         $plugin_url . 'assets/js/dark-mode-toggle.js'
         array(),
         '1.0.0.'
