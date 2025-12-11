@@ -16,20 +16,15 @@
     }
 
 function getInitialPreference() {
-    let saved = null;
-
-    try {
-        saved = window.localStorage.getItem('STORAGE_KEY');
-    } catch (e) {
-        saved = null;
-    }
+    const saved = window.localStorage.getItem(STORAGE_KEY);
+    
     if (saved == 'dark') return true;
     if (saved == 'light') return false;
 
 if (window.matchMedia && window.matchMedia ('(prefers-color-scheme: dark)').matches) {
     return true;
 }
-return false;
+    return false;
 }
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -45,11 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const nowDark = !body.classList.contains('dm-dark-mode');
         applyMode(nowDark);
 
-        try {
-            window.localStorage.setItem(STORAGE_KEY, nowDark ? 'dark' : 'light');
-        } catch (e) {
-        //ignore
-        }
+        window.localStorage.setItem(STORAGE_KEY, nowDark ? 'dark' : 'light');
     });
-});
+ });
 })();
