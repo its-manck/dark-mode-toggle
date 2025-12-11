@@ -39,8 +39,8 @@ function dm_render_toggle_button() {
         return;
     }
     echo '<button id="dm-toggle" class="dm-toggle" type="button" aria-label="Toggle dark mode">
-        <span class="dm-icon dm-icon-moon">🌙< </span>
-        <span class="dm-icon dm-icon-sun">☀️< </span>
+        <span class="dm-icon dm-icon-moon">🌙</span>
+        <span class="dm-icon dm-icon-sun">☀️</span>
         </button>';
 }
 
