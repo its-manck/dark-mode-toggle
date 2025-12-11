@@ -20,14 +20,14 @@ function dm_enqueue_assets() { //dm is Dark Mode
         'dm-styles',
         $plugin_url . 'assets/css/dark-mode-toggle.css',
         array(),
-        '1.0.0.'
+        '1.0.1.'
     );
 
     wp_enqueue_script(
         'dm-script',
         $plugin_url . 'assets/js/dark-mode-toggle.js',
         array(),
-        '1.0.0.',
+        '1.0.1.',
         true 
     );
 }
