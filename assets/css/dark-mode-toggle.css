@@ -22,7 +22,7 @@
 }
 #dm-toggle.dm-is-dark {
     background: #f5f5f5;
-    color: #111827;
+    color: #121212;
 }
 #dm-toggle.dm-is-dark .dm-icon-moon {
     display: none;
@@ -32,8 +32,9 @@
     display: inline;
 }
 
+
 body.dm-dark-mode {
-    background: #111827;
+    background: #121212;
     color: #f5f5f5;
 }
 
@@ -54,7 +55,7 @@ body.dm-dark-mode .et_pb_module {
 
 body.dm-dark-mode p,
 body.dm-dark-mode li {
-    color: #f5f5f5;
+    color: #f5f5f5 !important;
 }
 
 body.dm-dark-mode h1,
@@ -65,8 +66,22 @@ body.dm-dark-mode h5 {
     color: #f5f5f5 !important; 
 }
 
+body.dm-dark-mode .et-social-icon a,
+body.dm-dark-mode .et_pb_social_media_follow li a,
+body.dm-dark-mode .et_pb_social_icon,
+body.dm-dark-mode .et_pb_social_icon a,
+body.dm-dark-mode .et_pb_font_icon,
+body.dm-dark-mode .et_pb_blurb .et-pb-icon {
+    color: #f5f5f5 !important;
+}
+
 body.dm-dark-mode a {
     color: #f5f5f5;
+}
+
+body.dm-dark-mode svg,
+body.dm-dark-mode svg path {
+    fill: #f5f5f5 !important;
 }
 
 body.dm-dark-mode .et_pb_button {
@@ -77,13 +92,17 @@ body.dm-dark-mode .et_pb_button {
 body.dm-dark-mode .et_pb_menu .et-menu > li > a {
     color: #f5f5f5 !important;
 }
+body.dm-dark-mode .et_mobile_menu lia a {
+    color: #f5f5f5 !important;
+}
+
 
 body.dm-dark-mode .et_pb_menu,
 body.dm-dark-mode .et_pb_menu__wrap {
-    background-color: #020617 !important;
+    background-color: #121212 !important;
 }
 
 body.dm-dark-mode .et_pb_section.et_pb_section_0,
 body.dm-dark-mode .et_pb_section.et_pb_with_background {
-    background-color: #020617 !important;
+    background-color: #121212 !important;
 }
